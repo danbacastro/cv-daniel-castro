@@ -1,14 +1,259 @@
 * {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Oswald, Helvetica, Arial, sans-serif;
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
-ul {
+body {
+	background-color: #FFE658;
+}
+
+#nav-bar {
+	background: #6DBDD6;
+	border-radius: 0;
+	border-bottom: 5px solid #B71427;
+}
+
+.navbar-brand h1 {
+	padding: 0;
+	margin: 0;
+}
+
+.navbar-header, #ul-list {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid #B71427;
+	font-weight: bold;
+}
+
+.navbar-header button.navbar-toggle {
+}
+
+}
+
+#ul-list {
 	list-style: none;
+}
+
+#ul-list a:hover {
+	color: #B71427;
 }
 
 li {
 	text-align: center;
-	padding: 13px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+#ul-list > li > a > .glyphicon {
+	font-size: 30px;
+	color: #B71427;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+/** FOOTER **/
+
+.panel-footer {
+	background-color: #404040;
+	border-top: 5px solid #B71427;
+	border-radius: 0;
+}
+
+.panel-footer {
+	margin-top: 20px;
+}
+
+.glyphicon-envelope {
+	color: #B71427;
+    font-size: 50px;
+}
+
+.glyphicon-phone-alt {
+	color: #B71427;
+    font-size: 45px;
+}
+
+#envelope-icon {
+	text-align: right;
+	padding-right: 0;
+}
+
+#phone-icon {
+	text-align: center;
+	padding-right: 0;
+}
+
+#div-footer {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#phone-footer {
+	padding-right: 0;
+	font-size: 21px;
+	color: #FFFFFF;
+}
+
+#email-footer {
+	padding-right: 0;
+	font-size: 21px;
+	color: #FFFFFF;
+}
+
+.media-text {
+	text-align: right;
+	padding-right: 0;
+	margin-top: 10px;
+	font-size: 21px;
+	color: #FFFFFF;
+}
+
+#facebook, #linkedin {
+	font-size: 50px;
+	color: #B71427;
+}
+
+#media-facebook {
+	text-align: right;
+	padding-right: 0;
+	padding-left: 0;
+
+}
+
+/**************************** LARGE MEDIA ****************************/
+@media (max-width: 1200px) {
+
+}
+/**************************** MEDIUM MEDIA ****************************/
+@media (min-width: 992px) and (max-width: 1199px) {
+	.media-text #phone-footer, .media-text #email-footer, .media-text {
+		margin-top: 15px;
+		font-size: 17px;
+	}
+}
+/**************************** SMALL MEDIA ****************************/
+@media (min-width: 768px) and (max-width: 991px) {
+	.navbar-header, #ul-list {
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+
+	#ul-list { 
+		margin-top: 45px;
+	}
+
+	.media-text #phone-footer, .media-text #email-footer, .media-text {
+		margin-top: 5px;
+		font-size: 15px;
+		text-align: center;
+	}
+
+	#email-text {
+		margin-top: 15px;
+	}
+
+	#facebook, #linkedin {
+		font-size: 30x;
+	}
+
+	#media-facebook {
+		text-align: right;
+		padding-right: 0;
+		margin-left: 50px;
+	}
+}
+/**************************** EXTRA SMALL MEDIA ****************************/
+@media (max-width: 767px) and (min-width: 348px) {
+	.navbar-brand h1 {
+		padding-top: 0;
+	}
+	
+	.navbar-header button.navbar-toggle {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	#ul-list {
+		margin-top: 0;
+	}
+
+	#ul-list > li > a > .glyphicon {
+		margin-right: 30px;
+		padding: 0;
+		vertical-align: bottom;
+	}
+	li {
+		padding: 0;
+		margin-top: 5px;
+	}
+	#ul-list > li > a > span {
+		margin-bottom: 0px;
+	}
+}
+/**************************** SUPER EXTRA SMALL MEDIA ****************************/
+@media (max-width: 347px) {
+	#ul-list > li > a > .glyphicon {
+		font-size: 16px;
+		margin-right: 20px;
+		padding: 0;
+		vertical-align: bottom;
+		margin-bottom: 3px;
+	}
+
+	li {
+		padding: 0;
+		font-size: 12px;
+
+	}
+
+	#ul-list {
+		margin-top: 0;
+	}
+
+	#ul-list > li > a > span {
+		margin-bottom: 0px;
+	}
+
+	.navbar-brand h1 {
+		font-size: 20px;
+	}
+
+	.navbar-header button.navbar-toggle {
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+	
+	.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+		border: 1px solid #B71427;
+	}
+
+	#facebook {
+		margin-top: 5px;
+		font-size: 35px;
+	}
+
+	#linkedin {
+		margin-top: 5px;
+		font-size: 35px;
+	}
+
+	.glyphicon-envelope {
+		margin-top: 5px;
+    	font-size: 30px;
+	}
+
+	.glyphicon-phone-alt {
+		margin-top: 5px;
+    	font-size: 28px;
+	}
+
+	.div-footer:nth-child(1), .div-footer:nth-child(2), .div-footer:nth-child(3) {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }

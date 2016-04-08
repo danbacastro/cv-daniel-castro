@@ -6,42 +6,35 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css" />
 	<title>Currículo Online - Daniel Castro</title>
 </head>
 <body>
-	<header>
-		<nav class="navbar navbar-default">
-			<div class="container">
-				<div class="navbar-header">
-
-					<h1>Currículo Online - Daniel Castro</h1>
-
-         			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+	<header> <!-- Incício do Navegador -->	
+		<nav id="nav-bar" class="navbar navbar-default"> 
+			<div class="container"> <!-- Incício do Container -->	
+				<div class="navbar-header"> <!-- Incício navbar-header -->
+					<div class="navbar-brand">
+						<h1>Currículo Online<br class="hidden-lg hidden-md"> Daniel Castro</h1>
+					</div>
+					<!-- Início Botão Smartphone -->
+         			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-btn" aria-expanded="false">
             			<span class="sr-only">Toggle navigation</span>
             			<span class="icon-bar"></span>
            				<span class="icon-bar"></span>
             			<span class="icon-bar"></span>
-          			</button>
-
+          			</button>         			
+					<!-- Fim Botão Smartphone -->	
           		</div>
-
-				<div id="collapsable-nav" class="collapse navbar-collapse">
-					<ul class="nav navbar-nav navbar-right pull-left">
+				<!-- Início dos Ícones Menu -->	
+				<div id="collapsable-btn" class="collapse navbar-collapse">
+					<ul id="ul-list" class="nav navbar-nav navbar-right">
 						<li>
 							<a href="index.html">
-								<span class="glyphicon glyphicon-user"></span><br class="hidden-xs">Contato
-							</a>
-						</li>
-						<li>
-							<a href="index.html">
-								<span class="glyphicon glyphicon-education"></span><br class="hidden-xs">Formação
-							</a>
-						</li>
-						<li>
-							<a href="index.html">
-								<span class="glyphicon glyphicon-knight"></span><br class="hidden-xs">Cursos Complementares
+								<span class="glyphicon glyphicon-user"></span><br class="hidden-xs">Sobre Mim
 							</a>
 						</li>
 						<li>
@@ -51,29 +44,73 @@
 						</li>
 						<li>
 							<a href="index.html">
-								<span class="glyphicon glyphicon-globe"></span><br class="hidden-xs">Idiomas
+								<span class="glyphicon glyphicon-knight"></span><br class="hidden-xs">Skills
 							</a>
 						</li>
 						<li>
 							<a href="index.html">
-								<span class="glyphicon glyphicon-phone"></span><br class="hidden-xs">Informática
-							</a>
-						</li>
-						<li>
-							<a href="index.html">
-								<span class="glyphicon glyphicon-barcode"></span><br class="hidden-xs">Patentes
-							</a>
-						</li>
-						<li>
-							<a href="index.html">
-								<span class="glyphicon glyphicon-book"></span><br class="hidden-xs">Artigos
+								<span class="glyphicon glyphicon-book"></span><br class="hidden-xs">Projetos
 							</a>
 						</li>
 					</ul>
-				</div>
+				</div> <!-- Fim dos Ícones Menu -->	
+			</div> <!-- Fim Container -->	
+		</nav> <!-- Fim dos Ícones Menu -->	
+	</header> <!-- Fim do Navegador -->	
+
+	<div class="container">
+		<div class="row">
+			<div style="border: 1px solid black; height: 500px;">
+				OBJETIVOS: Atuar em empresas em setores como de Biotecnologia, P&D, Qualidade, entre outros.
 			</div>
-		</nav>	
-	</header>
+		</div>
+	</div>
+
+	<footer class="panel-footer">
+		<div class="container">
+			<div class="row">
+
+
+				<div class="div-footer col-lg-4 col-md-4 col-sm-4 col-xs-3">
+					<div id="phone-icon" class="envelope-phone-icons col-lg-2 col-md-2 col-sm-2">
+						<a href="tel:19982426025">
+							<span class="glyphicon glyphicon-phone-alt"></span>
+						</a>
+					</div>
+					<div class="media-text col-lg-10 col-md-10 col-sm-10">
+						<span class="hidden-xs" id="phone-footer">(19) 982426025<span class="hidden-xs hidden-sm"> | </span><br class="visible-xs visible-sm">(19) 982426025</span>
+					</div>
+				</div>
+
+				<div class="div-footer col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<a href="mailto:danba.castro@gmail.com">
+							<div id="envelope-icon" class="col-lg-5 col-md-5 col-sm-5">
+								<span class="glyphicon glyphicon-envelope"></span>
+							</div>
+							<div id="email-text" class="media-text col-lg-5 col-md-5 col-sm-5">
+								<span id="email-footer" class="hidden-xs">danba.castro@gmail.com</span>
+							</div>
+						</a>
+				</div>
+				
+
+				<div  class="div-footer col-lg-4 col-md-4 col-sm-4 col-xs-5">
+					<div class="media-text col-lg-8 col-md-8 com-sm-8 col-xs-2">
+						<span class="hidden-sm hidden-xs">Mídias Sociais:</span>
+					</div>
+					<div id="media-facebook" class="col-lg-2 col-md-2 col-sm-2 col-xs-5">
+						<a href="https://www.facebook.com/daniel.castro.1690671" target="_blank"><span  id="facebook" class="fa fa-facebook-square"></span></a>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-5">
+						<a href="https://br.linkedin.com/in/danielbacastro" target="_blank"><span id="linkedin" class="fa fa-linkedin-square"></span></a>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</footer>
+
 <!-- JavaScript  -->
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
